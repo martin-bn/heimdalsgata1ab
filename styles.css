@@ -440,6 +440,71 @@ h3 {
   white-space: nowrap;
 }
 
+.document-link:hover,
+.document-link:focus-visible {
+  background: var(--accent);
+  color: #f6fbf7;
+}
+
+.subpage-hero {
+  padding: 4.5rem 0 1.6rem;
+  animation: rise 800ms ease both;
+}
+
+.subpage-copy {
+  display: grid;
+  gap: 1.25rem;
+  max-width: 46rem;
+}
+
+.subpage-copy h1 {
+  font-size: clamp(2.5rem, 5vw, 4.4rem);
+  line-height: 0.96;
+}
+
+.document-page {
+  padding-top: 1rem;
+}
+
+.document-article {
+  display: grid;
+  gap: 1.2rem;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: var(--radius-xl);
+  background: var(--surface);
+  backdrop-filter: blur(18px);
+  box-shadow: var(--shadow);
+}
+
+.document-article h2 {
+  margin-top: 0.9rem;
+  font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+.document-article p,
+.document-article li {
+  color: var(--ink-soft);
+  line-height: 1.75;
+}
+
+.document-article ul {
+  margin: -0.3rem 0 0;
+  padding-left: 1.35rem;
+}
+
+.document-article li + li {
+  margin-top: 0.6rem;
+}
+
+.document-note {
+  margin-top: 0.8rem;
+  padding: 1rem 1.15rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.52);
+}
+
 .contact-panel {
   padding: 0.7rem;
 }
@@ -540,15 +605,24 @@ h3 {
     padding: 2.2rem 0 2.4rem;
   }
 
+  .subpage-hero {
+    padding: 2.2rem 0 1rem;
+  }
+
   .hero h1 {
     font-size: clamp(2.25rem, 11vw, 3.1rem);
+  }
+
+  .subpage-copy h1 {
+    font-size: clamp(2.1rem, 10vw, 2.9rem);
   }
 
   .band-card,
   .info-card,
   .contact-copy,
   .contact-note,
-  .document-row {
+  .document-row,
+  .document-article {
     padding: 1.2rem;
   }
 
