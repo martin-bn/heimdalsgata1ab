@@ -400,6 +400,15 @@ h3 {
   padding: 1.5rem;
 }
 
+.info-card-link {
+  align-content: start;
+}
+
+.info-card-link .document-tag {
+  justify-self: start;
+  margin-top: 0.2rem;
+}
+
 .info-card h3,
 .document-row h3 {
   font-size: 1.35rem;
@@ -503,6 +512,14 @@ h3 {
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
   background: rgba(255, 255, 255, 0.52);
+}
+
+.document-note-cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
 .contact-panel {
@@ -624,6 +641,10 @@ h3 {
   .document-row,
   .document-article {
     padding: 1.2rem;
+  }
+
+  .document-note-cta {
+    align-items: flex-start;
   }
 
   .button {
