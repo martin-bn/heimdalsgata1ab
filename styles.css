@@ -394,6 +394,12 @@ h3 {
   gap: 1.25rem;
 }
 
+.status-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
 .info-card {
   display: grid;
   gap: 0.8rem;
@@ -410,8 +416,47 @@ h3 {
 }
 
 .info-card h3,
-.document-row h3 {
+.document-row h3,
+.status-card h3 {
   font-size: 1.35rem;
+}
+
+.status-card {
+  display: grid;
+  gap: 1rem;
+  padding: 1.6rem;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  backdrop-filter: blur(18px);
+  box-shadow: var(--shadow);
+}
+
+.status-card-current {
+  background:
+    linear-gradient(180deg, rgba(223, 233, 226, 0.98), rgba(255, 250, 243, 0.88));
+}
+
+.status-label {
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.status-list {
+  margin: 0;
+  padding-left: 1.3rem;
+  color: var(--ink-soft);
+}
+
+.status-list li {
+  line-height: 1.7;
+}
+
+.status-list li + li {
+  margin-top: 0.7rem;
 }
 
 .document-panel {
@@ -578,7 +623,8 @@ h3 {
   .hero,
   .intro-band,
   .contact-panel,
-  .card-grid {
+  .card-grid,
+  .status-grid {
     grid-template-columns: 1fr;
   }
 
