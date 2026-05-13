@@ -390,7 +390,7 @@ h3 {
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1.25rem;
 }
 
@@ -453,6 +453,12 @@ h3 {
 
 .status-list li {
   line-height: 1.7;
+}
+
+.status-list a {
+  color: var(--accent-strong);
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
 }
 
 .status-list li + li {
