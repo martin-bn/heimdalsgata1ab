@@ -453,6 +453,20 @@ h3 {
   line-height: 1.75;
 }
 
+.announcement-list {
+  margin: 0;
+  padding-left: 1.3rem;
+  color: var(--ink-soft);
+}
+
+.announcement-list li {
+  line-height: 1.75;
+}
+
+.announcement-list li + li {
+  margin-top: 0.9rem;
+}
+
 .announcement-card a {
   color: var(--accent-strong);
   text-decoration: underline;
