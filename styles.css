@@ -614,6 +614,36 @@ h3 {
   gap: 1rem;
 }
 
+.storage-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.storage-figure {
+  display: grid;
+  gap: 0.8rem;
+  margin: 0;
+  padding: 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.58);
+}
+
+.storage-figure img {
+  width: 100%;
+  height: auto;
+  border-radius: calc(var(--radius-lg) - 8px);
+}
+
+.storage-figure figcaption {
+  padding: 0 0.35rem 0.25rem;
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
 .contact-panel {
   padding: 0.7rem;
 }
@@ -738,6 +768,10 @@ h3 {
 
   .document-note-cta {
     align-items: flex-start;
+  }
+
+  .storage-gallery {
+    grid-template-columns: 1fr;
   }
 
   .button {
